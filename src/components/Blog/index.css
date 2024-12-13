@@ -1,0 +1,153 @@
+.blog {
+  background-color: #ffffff;
+  margin-top: 0px;
+  padding-bottom: 80px;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 160px;
+  padding-top: 80px;
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #f57f45;
+}
+
+.blog-heading {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.blog-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec1a5c;
+  color: #ffff;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-btn:hover {
+  background-color: #f57f45;
+}
+
+.blog-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.slider-blog-container {
+  padding: 80px 160px;
+  margin: auto;
+}
+
+.slider-blog-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-blog-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  align-self: center;
+  color: #ec1a5c;
+}
+
+.slider-blog-img {
+  height: 250px;
+  width: 280px;
+}
+
+.slider-blog-container-sm {
+  display: none;
+}
+
+.slider-blog-feature {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.blog-arrow {
+  font-size: 25px;
+  color: #323f4b;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s, transform 0.5s;
+  margin-right: 10px;
+}
+
+.blog-arrow:hover {
+  transform: translateY(-5px);
+}
+
+.blog-read {
+  font-size: 14px;
+  color: #323f4b;
+  font-family: "Roboto", sans-serif;
+}
+
+.slider-blog-heading {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+  }
+  .blog-btn {
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .slider-blog-container {
+    display: none;
+  }
+
+  .slider-blog-container-sm {
+    display: block;
+    padding: 20px 20px;
+  }
+
+  .slider-blog-img {
+    width: 90%;
+  }
+}

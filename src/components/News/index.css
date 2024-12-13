@@ -1,0 +1,126 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  margin: auto;
+  padding: 100px 160px;
+  background-color: #edeceb;
+}
+
+.news-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news-left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.news-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #f57f45;
+}
+
+.news-main-heading {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.news-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec1a5c;
+  color: #ffff;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.news-btn:hover {
+  background-color: #f57f45;
+}
+
+.news-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.news-card {
+  width: 45%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.news-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+}
+
+.news-number {
+  color: #ec1a5c;
+}
+
+.news-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #323f4b;
+}
+
+.news-arrow {
+  font-size: 25px;
+  color: #323f4b;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s, transform 0.5s;
+}
+
+.news-arrow:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .news-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  .news-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+  }
+  .news-btn {
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .news-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .news-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .news-card {
+    width: 100%;
+  }
+}

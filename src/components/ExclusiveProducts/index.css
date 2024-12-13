@@ -1,0 +1,136 @@
+.exclusive {
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+.exclusive-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 160px;
+  padding-top: 80px;
+}
+
+.exclusive-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exclusive-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.exclusive-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #f57f45;
+}
+
+.exclusive-heading {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.exclusive-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec1a5c;
+  color: #ffff;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.exclusive-btn:hover {
+  background-color: #f57f45;
+}
+
+.exclusive-line {
+  width: 100%;
+  height: 2px;
+  background-color: #323f4b;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.exclusive-images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px 160px;
+  padding-top: 50px;
+}
+
+.exclusive-image-card {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  cursor: pointer;
+  outline: none;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.exclusive-img {
+  height: 180px;
+  width: 280px;
+  transition: 0.5s, transform 0.5s;
+}
+
+.exclusive-img:hover {
+  transform: translateY(-10px);
+}
+
+.exclusive-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .exclusive-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
+  .exclusive-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+  }
+  .exclusive-btn {
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .exclusive-images-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+
+  .exclusive-image-card {
+    margin-bottom: 30px;
+  }
+
+  .exclusive-img {
+    width: 330px;
+  }
+}

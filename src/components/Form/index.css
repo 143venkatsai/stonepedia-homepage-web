@@ -1,0 +1,209 @@
+.form-slider-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 120px 160px;
+}
+
+.slider-left {
+  width: 45%;
+  animation: fadeInFromLeft 1s ease-out;
+}
+
+.slider-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #f57f45;
+}
+
+.slider-heading {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.slider-view {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.slider-view i {
+  color: #ec1a5c;
+  font-size: 40px;
+}
+
+.slider-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.slider-date {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #919191;
+}
+
+.slider-message {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.slider-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec1a5c;
+  color: #ffff;
+  padding: 5px 20px;
+  margin-left: auto;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.slider-btn:hover {
+  background-color: #323f4b;
+}
+
+.form-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec1a5c;
+  color: #ffff;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+  background-color: #323f4b;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #edeceb;
+  padding: 60px 40px;
+  margin-left: auto;
+  width: 50%;
+  border-radius: 5px;
+  animation: fadeInFromRight 1s ease-out;
+}
+
+.form-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #323f4b;
+}
+
+.form-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.form-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #323f4b;
+  margin-bottom: 30px;
+}
+
+.form-name-field {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-element {
+  border: none;
+  padding: 10px 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.element {
+  width: 48%;
+}
+
+.first-name {
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-btn {
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .form-slider-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+
+  .slider-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .form-name-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .element {
+    width: 100%;
+  }
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

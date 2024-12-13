@@ -1,0 +1,25 @@
+/* .image-fixed {
+  position: relative;
+  overflow-y: auto; 
+   padding-top: 20rem;
+} */
+
+.fixed-img {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  /* height: auto;
+  object-fit: cover;
+  z-index: -1; */
+  height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-img {
+    height: 30vh;
+    width: 100%;
+  }
+}

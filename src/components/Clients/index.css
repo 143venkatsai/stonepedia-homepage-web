@@ -1,0 +1,43 @@
+.clients-container {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 160px;
+}
+
+.clients-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #f57f45;
+}
+
+.clients-heading {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.client-images-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.client-img {
+  height: 100px;
+  width: 18%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .clients-container {
+    padding: 20px 20px;
+  }
+  .client-img {
+    width: 45%;
+  }
+}
